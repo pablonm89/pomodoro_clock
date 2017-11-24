@@ -24,6 +24,12 @@ body {
 
 .container .session span, .container .break span {
 	display: block;
+	cursor: pointer;
+}
+
+.container .session h6, .container .break h6 {
+	font-size: 25px;
+	margin: 5px;
 }
 
 .container .timer h2 {
@@ -31,8 +37,7 @@ body {
 	margin-bottom: 0px;
 }
 
-.container .timer .clock h1 {
-	margin: 0px;
+.container .timer .clock span {
 	font-size: 100px;
 }
 
@@ -44,6 +49,7 @@ body {
 	margin: 0px 15px;
 	padding: 5px;
 	color: #333;
+	cursor: pointer;
 }
 
 .buttons span:hover {
