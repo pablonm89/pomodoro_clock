@@ -1,53 +1,34 @@
-/*setInterval(function() {
-minutes = 
+session = 25;
+breakSession = 5;
+seconds = sessionToSeconds(session);
 
-}, 1000);
-*/
+//use seconds / 60 to get minutes
+//use seconds % 60 to get remaining seconds
+//save seconds variable with new value doing seconds %= 60
+//use setInterval 1000 to reduce 1 second at a time
 
-breakSession(5)
-timerSession(25)
-
-
-
-
-function breakSession(n) {
-$('.js-break').html(n)
-
-$('.break-down').click(_ => {
-$('.js-break').html(n-=1)
-})
-
-$('.break-up').click(_ => {
-$('.js-break').html(n+=1)
-})
-
+//CONVERTS INTEGER VALUE TO SECONDS
+function sessionToSeconds(n) {
+	var ToSeconds = n * 60
+	return ToSeconds
 }
 
-function timerSession(n) {
-$('.js-session, .js-timer').html(n)
-
-$('.session-down').click(_ => {
-$('.js-session, .js-timer').html(n-=1)
-})
-
-$('.session-up').click(_ => {
-$('.js-session, .js-timer').html(n+=1)
-})
-
+function displaySession(time) {
+	if (time < 10) {
+		return "0" + time
+	} else {
+		return time
+	}
+	//if less than 10 minutes, put 0 in front
+	//cant be less than 1
 }
 
-
-
-
-
-
-// RESET CLOCK //
-function timerReset() {
-breakSession(5)
-timerSession(25)
+function displayBreak(time) {
+//cant be less than 1
 }
 
-
-$('.reset').click(_ => {
-	timerReset()
-})
+function resetTimer() {
+	$('.reset').click(_ => {
+		//resets to 25 - 5
+	})
+}
