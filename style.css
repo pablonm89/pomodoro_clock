@@ -1,0 +1,51 @@
+* {
+	font-family: Roboto, Arial, sans-serif;
+	text-align: center;
+	color: #333;
+}
+
+body {
+	margin: 0;
+	background: white;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	width: 600px;
+	background: whitesmoke;
+	margin-top: 80px;
+}
+
+.container .session, .container .break {
+	display: inline-block;
+	margin: 0px 50px;
+}
+
+.container .session span, .container .break span {
+	display: block;
+}
+
+.container .timer h2 {
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+
+.container .timer .clock h1 {
+	margin: 0px;
+	font-size: 100px;
+}
+
+.buttons {
+	margin-bottom: 20px;
+}
+
+.buttons span {
+	margin: 0px 15px;
+	padding: 5px;
+	color: #333;
+}
+
+.buttons span:hover {
+	color: #777;
+}
